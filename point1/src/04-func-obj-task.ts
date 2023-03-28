@@ -36,7 +36,7 @@ const admin: Admin = {
   lastVisited: new Date(),
   role: 'admin',
 };
-function login(user: { login: string; password: string }): void {
+export function login(user: { login: string; password: string }): void {
   if (user.login.length > 0 || user.password.length > 0) {
     console.log('Your password or login is empty');
   }
