@@ -12,6 +12,6 @@ function move(animal: Fish | Bird) {
   return animal.fly();
 }
 
-function isNull(val: any): val is null {
-  return !val;
-}
+// function isNull(val: any): val is null {
+//   return !val;
+// }

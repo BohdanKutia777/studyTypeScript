@@ -29,9 +29,9 @@ type Employee1 = {
   contractStart: Date;
 } & User1 &
   Person1;
-const user1: Employee1 = {
-  contractStart: new Date(),
-};
+// const user1: Employee1 = {
+//   contractStart: new Date(),
+// };
 type Dev1 = {
   skills: string[];
   level?: 'junior' | 'middle' | 'senior';
