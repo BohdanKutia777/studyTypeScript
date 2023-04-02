@@ -7,6 +7,6 @@ const user = {
 };
 
 // <button onClick="myClickHandler">Click me!</button>
-function myClickHandler(event: Event) {
+function myClickHandler(this: HTMLButtonElement, event: Event) {
   this.disabled = true;
 }
