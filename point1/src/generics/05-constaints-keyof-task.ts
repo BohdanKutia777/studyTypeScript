@@ -8,7 +8,7 @@ export function keys<O extends object>(obj: O): Array<keyof O> {
   return currentKeys;
 }
 
-export function values<O extends object>(obj: O) {
+export function values<O extends object>(obj: O): Array<O[keyof O]> {
   const currentValues = [];
 
   for (let key in obj) {
