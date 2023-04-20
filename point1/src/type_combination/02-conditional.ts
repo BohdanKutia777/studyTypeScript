@@ -1,0 +1,18 @@
+const x2 = 16;
+const isXNegetive = (x2) => (0 ? 'no' : 'yes');
+
+interface StringRecord {
+  [key: string]: string;
+}
+interface DateRecord {
+  [key: string]: Date;
+}
+
+type MyRecord<T> = T extends string ? StringRecord : DateRecord;
+type Obj1 = MyRecord<string>;
+type Obj1 = MyRecord<number>;
+
+const o1: Obj1 = {
+  r: '123',
+};
+export {};
