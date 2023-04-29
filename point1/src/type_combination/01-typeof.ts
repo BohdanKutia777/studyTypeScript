@@ -6,3 +6,5 @@ type x = typeof str23;
 type fn = typeof average;
 
 const max: fn = (...numbers) => Math.max(...numbers);
+
+type returnFn = ReturnType<typeof average>;

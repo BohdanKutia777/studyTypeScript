@@ -10,7 +10,7 @@ interface DateRecord {
 
 type MyRecord<T> = T extends string ? StringRecord : DateRecord;
 type Obj1 = MyRecord<string>;
-type Obj1 = MyRecord<number>;
+type Obj2 = MyRecord<number>;
 
 const o1: Obj1 = {
   r: '123',
